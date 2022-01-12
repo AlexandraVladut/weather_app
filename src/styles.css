@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+  font-family: "Space Mono", monospace;
+}
+.display {
+  max-width: 950px;
+  height: 600px;
+  background-image: url("/home/ats/Desktop/shecodes/plus/week5 project/images/sun.jpg");
+  background-size: 950px;
+  border-radius: 5px;
+  border: 1.5px solid #af5807;
+  display: block;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+header {
+  margin-top: 15px;
+}
+.emoji {
+  font-size: 30px;
+  padding: 0;
+}
+.weekly {
+  text-align: center;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.h1 {
+  font-family: "Alfa Slab One", cursive;
+  color: #344535;
+}
+.col h1 {
+  margin-bottom: 0px;
+}
+.h4 {
+  font-family: "Alfa Slab One", cursive;
+  color: #eaeebc;
+}
+.weekDays {
+  opacity: 0.8;
+}
+.temp {
+  color: #d1e1bc;
+}
+h4 {
+  font-family: "Satisfy", cursive;
+  color: #f4c165;
+  text-align: center;
+  padding-top: 40px;
+}
+.degrees {
+  color: #344535;
+  font-family: "Alfa Slab One", cursive;
+  font-size: larger;
+}
+p {
+  text-align: center;
+  color: #d1e1bc;
+  font-size: small;
+  padding-top: 10px;
+  font-family: "Space Mono", monospace;
+}
