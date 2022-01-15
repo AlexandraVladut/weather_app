@@ -5,7 +5,7 @@ body {
 .display {
   max-width: 950px;
   height: 600px;
-  background-image: url("images/sun.jpg");
+  background-image: url("../images/sun.jpg");
   background-size: 950px;
   border-radius: 5px;
   border: 1.5px solid #af5807;
