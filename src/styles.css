@@ -57,10 +57,27 @@ h4 {
   font-family: "Alfa Slab One", cursive;
   font-size: larger;
 }
-p {
+footer {
+  text-align: center;
+}
+a:link {
+  text-align: center;
+  font-size: 17px;
+  padding-top: 10px;
+  font-family: "Space Mono", monospace;
+  display: inline;
+}
+a:hover {
   text-align: center;
   color: #d1e1bc;
-  font-size: small;
+
+  padding-top: 10px;
+  font-family: "Space Mono", monospace;
+}
+p {
+  display: inline;
+  color: #d1e1bc;
+  font-size: 17px;
   padding-top: 10px;
   font-family: "Space Mono", monospace;
 }
