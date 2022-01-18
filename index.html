@@ -67,10 +67,30 @@
       </header>
       <br /><br />
       <div class="container">
-        <div class="row">
-          <div class="col"></div>
+         <div class="row align-items-center">
+          <div class="col text-end" >
+            <img src="" alt="Clear" id="icon" class="float-left" />
+          </div>
           <div class="col-md-auto h1" id="city">Zurich</div>
-          <div class="col"></div>
+          <div class="col-md-auto">
+            <div id="tempSelection">
+              <div class="cell degrees" id="temperature">16 °</div>
+            </div></div>
+
+            <div class="col" id="radio">
+              <input
+                type="radio"
+                id="Choice1"
+                name="unit"
+                value="celsius"
+                checked
+              />
+              <label for="Choice1">C</label>
+
+              <input type="radio" id="Choice2" name="unit" value="farenheit" />
+              <label for="Choice2">F</label>
+            </div>
+          </div>
         </div>
         <div class="row no-gutters">
           <div class="col-8">
