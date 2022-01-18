@@ -32,9 +32,16 @@ header {
 .h1 {
   font-family: "Alfa Slab One", cursive;
   color: #344535;
+  margin-bottom: 0px;
 }
 .col h1 {
   margin-bottom: 0px;
+}
+#city,
+#Choice1,
+#Choice2 {
+  margin-bottom: 0px;
+  vertical-align: middle;
 }
 .h4 {
   font-family: "Alfa Slab One", cursive;
@@ -55,7 +62,9 @@ h4 {
 .degrees {
   color: #344535;
   font-family: "Alfa Slab One", cursive;
-  font-size: larger;
+  font-size: 40px;
+  display: table-cell;
+  vertical-align: bottom;
 }
 footer {
   text-align: center;
