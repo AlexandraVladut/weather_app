@@ -44,25 +44,31 @@ completeHour = `${hour} : ${minutes}`;
 hourChange.innerHTML = completeHour;
 //
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
-  let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
+
   let forecastHTML = `<div class="row">`;
 
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
       <div class="col-2">
-        <div class="forecast-date">${day}</div>
+        <div class="forecast-date">${forecastDay.dt}</div>
         <img
-          src="http://openweathermap.org/img/wn/50d@2x.png"
+          src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
           alt=""
           width="50"
         />
         <div class="forecast-temperatures">
-          <span class="forecast-temperature-max"> 18° </span>
-          <span class="forecast-temperature-min"> 12° </span>
+          <span class="forecast-temperature-max"> ${Math.round(
+            forecastDay.temp.max
+          )}° | </span>
+          <span class="forecast-temperature-min"> ${Math.round(
+            forecastDay.temp.min
+          )}° </span>
         </div>
       </div>
   `;
